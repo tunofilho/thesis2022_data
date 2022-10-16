@@ -12,7 +12,7 @@ Road extraction is an important research topic, mainly traffic management, urban
 http://hdl.handle.net/11449/237021
 
 # Citação
-Filho, A. G. G. (2022). Deep Convolutional Neural Network ( DCNN ) para Extração automática de rede viária a partir da FUSÃO de dados varredura LASER aerotransportado e imagens de altíssima resolução em ambiente urbano Deep Convolutional Neural Network ( DCNN ) para Extração aut (FCT/UNESP). Disponível em http://hdl.handle.net/11449/237021
+Filho, A. G. G. (2022). Deep Convolutional Neural Network ( DCNN ) para Extração automática de rede viária a partir da FUSÃO de dados varredura LASER aerotransportado e imagens de altíssima resolução em ambiente urbano. (FCT/UNESP). Disponível em http://hdl.handle.net/11449/237021
 
 ```
 @phdthesis{Filho2022,
@@ -22,9 +22,10 @@ file = {:Users/antonioguimaraesfilho/Documents/doutorado_unesp/tese/defesa/22_10
 keywords = {Road network extraction. Deep learning data fusion},
 pages = {119},
 school = {FCT/UNESP},
-title = {{Deep Convolutional Neural Network ( DCNN ) para Extra{\c{c}}{\~{a}}o autom{\'{a}}tica de rede vi{\'{a}}ria a partir da FUS{\~{A}}O de dados varredura LASER aerotransportado e imagens de alt{\'{i}}ssima resolu{\c{c}}{\~{a}}o em ambiente urbano Deep Convolutional Neural Network ( DCNN ) para Extra{\c{c}}{\~{a}}o aut}},
+title = {{Deep Convolutional Neural Network ( DCNN ) para Extra{\c{c}}{\~{a}}o autom{\'{a}}tica de rede vi{\'{a}}ria a partir da FUS{\~{A}}O de dados varredura LASER aerotransportado e imagens de alt{\'{i}}ssima resolu{\c{c}}{\~{a}}o em ambiente urbano.}},
 url = {http://hdl.handle.net/11449/237021},
 year = {2022}
 }
+
 
 ```
