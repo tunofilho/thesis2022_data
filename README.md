@@ -12,19 +12,19 @@ Road extraction is an important research topic, mainly traffic management, urban
 http://hdl.handle.net/11449/237021
 
 # Citação
-Filho, A. G. G. (2022). Deep Convolutional Neural Network ( DCNN ) para Extração automática de rede viária a partir da FUSÃO de dados varredura LASER aerotransportado e imagens de altíssima resolução em ambiente urbano. (FCT/UNESP). Disponível em http://hdl.handle.net/11449/237021
+> Filho, A. G. G. (2022). Deep Convolutional Neural Network ( DCNN ) para Extração automática de rede viária a partir da FUSÃO de dados varredura LASER aerotransportado e imagens de altíssima resolução em ambiente urbano. (FCT/UNESP). Disponível em http://hdl.handle.net/11449/237021
 
 ```
 @phdthesis{Filho2022,
-abstract = {Road extraction is an important research topic, mainly traffic management, urban design, surveillance, satellite navigation, and map update. The main problem with road network extraction in Remote Sensing is describing its attributes. Deep learning algorithms can extract features from data without human intervention. Nowadays, deep convolution neural networks are state of the art in road network segmentation and are known for their remark- able ability to explore multi-level contexts. Nevertheless, with increased spatial resolution, the roads become more detailed, and the interferences (building, shadows, obstructions - e.g., cars, trees) still make extraction in urban areas challenging. One of the available strate- gies is data fusion from other sensors/sources to add information in object extraction. The proposed methodology uses the adapted Unet in the fusion of Highest resolution Orthoim- ages and LASER scanner data from the Federal District state (DF). Two fusion approaches were tested: early and multi-level. And two input types: intensity image and surface models. The early fusion with intensity image reaches 74.92 IoU and 84.68 F1 in test data, an improvement of 2.1% IoU and 1.2% F1 over the model without fusion in urban areas. Moreover, the early fusion with surface models increases 2.3% IoU and 1.5% in the region with few roads density and rare occlusions. The results showed that the fusion increases activation of road and other classes directly involved with occlusion, decreases the context dependence in occlusion areas, and enhances segmentation precision. Implementation and results are available at <https://github.com/tunofilho/thesis2022_data},
-author = {Filho, Antonio Gaudencio Guimaraes},
-file = {:Users/antonioguimaraesfilho/Documents/doutorado_unesp/tese/defesa/22_10_12_minha_tese_abnt_final.pdf:pdf},
-keywords = {Road network extraction. Deep learning data fusion},
-pages = {119},
-school = {FCT/UNESP},
-title = {{Deep Convolutional Neural Network ( DCNN ) para Extra{\c{c}}{\~{a}}o autom{\'{a}}tica de rede vi{\'{a}}ria a partir da FUS{\~{A}}O de dados varredura LASER aerotransportado e imagens de alt{\'{i}}ssima resolu{\c{c}}{\~{a}}o em ambiente urbano.}},
-url = {http://hdl.handle.net/11449/237021},
-year = {2022}
+  abstract = {Road extraction is an important research topic, mainly traffic management, urban design, surveillance, satellite navigation, and map update. The main problem with road network extraction in Remote Sensing is describing its attributes. Deep learning algorithms can extract features from data without human intervention. Nowadays, deep convolution neural networks are state of the art in road network segmentation and are known for their remark- able ability to explore multi-level contexts. Nevertheless, with increased spatial resolution, the roads become more detailed, and the interferences (building, shadows, obstructions - e.g., cars, trees) still make extraction in urban areas challenging. One of the available strate- gies is data fusion from other sensors/sources to add information in object extraction. The proposed methodology uses the adapted Unet in the fusion of Highest resolution Orthoim- ages and LASER scanner data from the Federal District state (DF). Two fusion approaches were tested: early and multi-level. And two input types: intensity image and surface models. The early fusion with intensity image reaches 74.92 IoU and 84.68 F1 in test data, an improvement of 2.1% IoU and 1.2% F1 over the model without fusion in urban areas. Moreover, the early fusion with surface models increases 2.3% IoU and 1.5% in the region with few roads density and rare occlusions. The results showed that the fusion increases activation of road and other classes directly involved with occlusion, decreases the context dependence in occlusion areas, and enhances segmentation precision. Implementation and results are available at <https://github.com/tunofilho/thesis2022_data},
+  author = {Filho, Antonio Gaudencio Guimaraes},
+  file = {:Users/antonioguimaraesfilho/Documents/doutorado_unesp/tese/defesa/22_10_12_minha_tese_abnt_final.pdf:pdf},
+  keywords = {Road network extraction. Deep learning data fusion},
+  pages = {119},
+  school = {FCT/UNESP},
+  title = {{Deep Convolutional Neural Network ( DCNN ) para Extra{\c{c}}{\~{a}}o autom{\'{a}}tica de rede vi{\'{a}}ria a partir da FUS{\~{A}}O de dados varredura LASER aerotransportado e imagens de alt{\'{i}}ssima resolu{\c{c}}{\~{a}}o em ambiente urbano.}},
+  url = {http://hdl.handle.net/11449/237021},
+  year = {2022}
 }
 
 
