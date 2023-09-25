@@ -1,0 +1,49 @@
+default: &Default
+  # dataset
+  IMG_WIDTH: 256
+  IMG_HEIGHT: 256
+  batch_size: 2
+  path: '/Users/antonioguimaraesfilho/PycharmProjects/fusion_tf24/path'  # absolute path
+  aug: True
+
+  # model
+
+  inicialization: 'glorot'
+  activation: 'relu'    # if finetuning - only modify decoder activations
+  loss: 'focal_tversky'  # output or output_final
+  w: 1.   # loss weight
+  loss2: 'dice'  # output_inter
+  w2: 0.2  # loss2 weight
+  backbone: 'resnet50' # vgg16, resnet50
+  type_fusion: 'earlyres'  # early, unet, resnet, fg_resnet50, tcd_resnet50, tcd_resnet50_v2, af_resnet50, trisegnet_vgg16, fusenet_vgg16, earlyres
+  fus_str: 'add'  # add, dffm , esa_fus, cbam, att_cos   obs: af_resnet_v2
+  optimizer: 'sgd'
+  gradientcentral: False
+  drop: False           # only decoderchoose concat
+  dropout_rate: 0.1     # only decoderchoose concat
+  activationfinal: 'sigmoid'
+  interpolation: 'bilinear'
+  decoderchoose: 'earlyres_dec'  # fg_unet, tcd_net, af_net, af_net_v2 3 4, trisegnet, fusenet, resnet_ or vgg_ + (up_conv) or (transp) + (_concat) / resnet_cfb, earlyres_dec
+  regularizer: 'none'  # observation: gradientcentral and adam opt
+  ds: 0  # obs: fg_unet, tcd_net, af_net obs2: 0 - input_solver, 1 - input_solver2ds, 2 - input_solver2ds_same
+
+  # model fit
+  lr: 0.01
+  epochs: 10
+  step: 1
+  schedule: True  # obs: adam
+  schedule_choose: 'poly' # step or poly
+  lr_limit: 0.0001   # only poly schedule
+  fine_tuning: False
+
+  # evaluation
+  alpha: 0.3    # tversky and focal tversky
+  img_visual: True    # validation images tensorboard visualization
+
+test1:
+  <<: *Default
+  lr: 0.001
+
+test2:
+  <<: *Default
+  lr: 0.001

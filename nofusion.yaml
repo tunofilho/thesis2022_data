@@ -1,0 +1,50 @@
+default: &Default
+  # dataset
+  IMG_WIDTH: 512
+  IMG_HEIGHT: 512
+  batch_size: 2
+  path: '/Users/antonioguimaraesfilho/PycharmProjects/fusion_tf24/path'  # absolute path
+  aug: True
+
+  # model
+
+  inicialization: 'glorot'
+  activation: 'relu'    # if finetuning - only modify decoder activations
+  architecture: 'unet' # unet (backbones) , deeplabv3plus (resnet50), segnet(vgg16), dlink(resnet50), focus_gated(resnet50), focus_gated_v2(resnet50)
+  loss: 'focal_tversky'
+  w: 1.   # loss weight
+  loss3: 'dice'  # output_inter3 /2
+  w3: 1  # loss2 weight
+  loss2: 'dice'  # output_inter2 /4
+  w2: 1  # loss3 weight
+  loss1: 'dice'  # output_inter1 /8
+  w1: 1  # loss4 weight
+  backbone: 'resnet34'   # resnet34, resnet50, resnet101, resnet152, vgg16, vgg19, scratch16, scratch19
+  optimizer: 'sgd'
+  gradientcentral: True
+  drop: False           # only decoderchoose concat
+  dropout_rate: 0.1     # only decoderchoose concat
+  activationfinal: 'sigmoid'
+  interpolation: 'bilinear'
+  decoderchoose: 'resnet_up_conv_concat'  # resnet_ or vgg_ + (up_conv) or (transp) + (_concat) / if resnet34 only (_concat2)
+  regularizer: 'none' # observation: gradientcentral and adam opt
+  ds: 0  # obs: 1 focus_gated_ds
+
+  # model fit
+  lr: 0.01
+  epochs: 3
+  step: 1
+  schedule: True  # obs: adam
+  schedule_choose: 'poly' # step or poly
+  lr_limit: 0.0001   # only poly schedule
+  fine_tuning: False   #  obs: scratch16 and scratch19   obs2: valid only for unet archicteture
+
+  # evaluation
+  alpha: 0.3    # tversky and focal tversky
+  beta: 0.3    # cl + dice (skeleton)
+  img_visual: True    # validation images tensorboard visualization
+
+test1:
+  <<: *Default
+
+
